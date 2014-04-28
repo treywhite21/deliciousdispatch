@@ -23,7 +23,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -32,14 +32,14 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 400px;
+  height: 300px;
   background-color:#555;
 }
 .carousel img {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 
@@ -95,19 +95,26 @@ body {
   letter-spacing: -1px;
 }
 
+/* -- HEADER BAR -- */
+.logo {
+  width: 125px;
+  position: relative;
+  left: -5px;
+  top: -10px;
+}
 
 
 /* -- RESPONSIVE CSS -- */
 
 @media (min-width: 768px) {
 
-  /* Remve the edge padding needed for mobile */
+  /* Remove the edge padding needed for mobile */
   .marketing {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* Navbar positioning foo */
+  /* Navbar positioning */
   .navbar-wrapper {
     margin-top: 20px;
     margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
@@ -119,7 +126,7 @@ body {
 
   /* Bump up size of carousel content */
   .carousel-caption p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 21px;
     line-height: 1.4;
   }
@@ -5656,7 +5663,7 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   z-index: 15;
   width: 60%;
